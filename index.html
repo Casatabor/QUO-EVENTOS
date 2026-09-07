@@ -1,157 +1,142 @@
 <!doctype html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#070b20" />
-  <meta name="description" content="QUO — Productora de innovación, BTL, eventos y Brand Experience. Más de 15 años creando experiencias de marca memorables desde Las Condes, Chile." />
-  <title>QUO — Innovation, BTL & Brand Experience</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="theme-color" content="#050712"/>
+  <meta name="description" content="QUO — Innovación, BTL, eventos y Brand Experience. Más de 15 años produciendo experiencias para grandes marcas desde Santiago de Chile."/>
+  <title>QUO — Brand Experience, BTL & Events</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
   <div class="noise"></div>
-  <div class="cursor-glow" aria-hidden="true"></div>
+  <div class="cursor-glow"></div>
 
   <header class="nav">
-    <a class="brand" href="#top" aria-label="QUO inicio">
-      <img src="assets/quo-logo.png" alt="QUO" />
+    <a href="#top" class="brand">
+      <img src="assets/quo-logo.png" alt="QUO"/>
       <span>QUO</span>
     </a>
     <nav>
       <a href="#work">Work</a>
-      <a href="#builder">Builder</a>
+      <a href="#builder">Experience Builder</a>
       <a href="#services">Servicios</a>
-      <a href="#about">Nosotros</a>
-      <a href="#contact">Contacto</a>
+      <a href="#about">QUO</a>
     </nav>
-    <a class="nav-cta" href="#book">Book the Lab ↗</a>
+    <button class="nav-cta js-open-contact" type="button">START A PROJECT ↗</button>
   </header>
 
   <main id="top">
-    <section class="hero section">
+    <section class="hero">
       <div class="hero-grid"></div>
-      <div class="speed-line l1"></div><div class="speed-line l2"></div><div class="speed-line l3"></div>
+      <div class="hero-streak s1"></div><div class="hero-streak s2"></div><div class="hero-streak s3"></div>
+
       <div class="hero-copy reveal">
-        <div class="eyebrow"><span class="pulse"></span> LAS CONDES · CHILE · BRAND EXPERIENCE</div>
+        <div class="eyebrow"><i></i> SANTIAGO · CHILE / BRAND EXPERIENCE</div>
         <h1>
-          <span class="solid">CHALLENGE</span>
-          <span class="outline">THE STATUS QUO.</span>
+          <span>DONDE LAS</span>
+          <span class="outline">MARCAS SE</span>
+          <span>VUELVEN</span>
+          <span class="electric">EXPERIENCIAS.</span>
         </h1>
-        <p class="hero-lead">
-          We create experiences people don't expect. Innovación, BTL, eventos y Brand Experience
-          con más de 15 años llevando ideas desde el primer spark hasta el impacto real.
-        </p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#work">Ver proyectos <span>↘</span></a>
-          <a class="btn btn-ghost" href="mailto:marcelo@quo-io.com">marcelo@quo-io.com</a>
-        </div>
-      </div>
-
-      <div class="hero-visual reveal">
-        <div class="orb orb-a"></div>
-        <div class="orb orb-b"></div>
-        <div class="hero-card tilt">
-          <img src="assets/project-develon.png" alt="Producción de experiencia de marca QUO" />
-          <div class="card-overlay"></div>
-          <div class="card-meta">
-            <span>01 / CASE</span>
-            <strong>Brand experiences engineered to move.</strong>
+        <div class="hero-foot">
+          <p>Innovación, BTL, eventos y Brand Experience. Más de 15 años creando experiencias de alto impacto para marcas que no quieren pasar inadvertidas.</p>
+          <div class="hero-actions">
+            <a href="#work" class="pill light">VER PROYECTOS ↘</a>
+            <button class="pill dark js-open-contact" type="button">CONVERSEMOS ↗</button>
           </div>
         </div>
-        <div class="floating-tag tag-a">BTL / LIVE</div>
-        <div class="floating-tag tag-b">IDEA → IMPACT</div>
       </div>
 
-      <div class="hero-bottom">
-        <span>SCROLL TO EXPERIENCE</span>
-        <div class="scroll-line"><i></i></div>
-        <span>EST. +15 YEARS</span>
+      <div class="hero-showreel reveal">
+        <div class="reel-frame" data-active="0">
+          <img class="reel-img active" src="assets/project-develon.png" alt="Experiencia industrial QUO">
+          <img class="reel-img" src="assets/project-sow-01.png" alt="Evento SOW producido por QUO">
+          <img class="reel-img" src="assets/project-wella.png" alt="Activación Wella">
+          <img class="reel-img" src="assets/project-beauty-01.png" alt="Brand experience de belleza">
+          <div class="reel-overlay"></div>
+          <div class="reel-top"><span>QUO / SELECTED MOTION</span><span id="reelCounter">01 — 04</span></div>
+          <div class="reel-bottom">
+            <strong id="reelTitle">DEVELON / HEAVY IMPACT</strong>
+            <button id="reelNext" type="button">NEXT ↗</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-status">
+        <span>+15 YEARS IN MOTION</span>
+        <div><i></i></div>
+        <span>LAS CONDES / SANTIAGO</span>
       </div>
     </section>
 
-    <section class="ticker" aria-label="Servicios QUO">
-      <div class="ticker-track">
-        <span>INNOVACIÓN</span><b>✦</b><span>BTL</span><b>✦</b><span>EVENTOS</span><b>✦</b><span>BRAND EXPERIENCE</span><b>✦</b><span>ACTIVACIONES</span><b>✦</b><span>PRODUCCIÓN</span><b>✦</b>
-        <span>INNOVACIÓN</span><b>✦</b><span>BTL</span><b>✦</b><span>EVENTOS</span><b>✦</b><span>BRAND EXPERIENCE</span><b>✦</b><span>ACTIVACIONES</span><b>✦</b><span>PRODUCCIÓN</span><b>✦</b>
+    <section class="client-rail">
+      <div class="rail-label">SELECTED CLIENTS / EXPERIENCE</div>
+      <div class="rail-track">
+        <span>HYUNDAI</span><b>×</b><span>DEVELON</span><b>×</b><span>NATURA</span><b>×</b><span>WELLA PROFESSIONALS</span><b>×</b><span>SOW</span><b>×</b>
+        <span>HYUNDAI</span><b>×</b><span>DEVELON</span><b>×</b><span>NATURA</span><b>×</b><span>WELLA PROFESSIONALS</span><b>×</b><span>SOW</span><b>×</b>
       </div>
     </section>
 
-    <section id="work" class="section work">
-      <div class="section-head reveal">
+    <section id="work" class="work section">
+      <div class="work-head reveal">
         <div>
-          <span class="kicker">SELECTED WORK / 2026</span>
-          <h2>Experiencias que<br><em>toman la ciudad.</em></h2>
+          <span class="kicker">SELECTED WORK</span>
+          <h2>NO ES MONTAJE.<br><em>ES PRESENCIA.</em></h2>
         </div>
-        <p>Diseñamos cada proyecto como un sistema: concepto, espacio, montaje, contenido, operación y esa capa de detalle que hace que una marca se sienta viva.</p>
+        <p>Diseñamos sistemas completos de experiencia: concepto, narrativa, espacio, producción, tecnología, operación y contenido. Cada punto de contacto tiene una razón.</p>
       </div>
 
-      <div class="work-grid">
-        <article class="project project-wide reveal">
-          <div class="media"><img src="assets/project-sow-01.png" alt="Evento SOW producido por QUO" /></div>
-          <div class="project-info">
-            <span>01 · LIVE EXPERIENCE</span>
-            <h3>SOW — Night Activation</h3>
-            <p>Escenografía, presencia de marca y atmósfera para transformar un espacio en experiencia.</p>
+      <div class="case-stack">
+        <article class="case case-large reveal">
+          <div class="case-image">
+            <img src="assets/project-develon.png" alt="Proyecto industrial DEVELON">
+            <div class="case-number">01</div>
+          </div>
+          <div class="case-copy">
+            <span>INDUSTRIAL / LAUNCH / LIVE</span>
+            <h3>DEVELON</h3>
+            <p>Una puesta en escena de gran escala donde maquinaria, arquitectura, luz y contenido construyen una experiencia de marca con peso real.</p>
+            <button class="text-link js-case" data-case="DEVELON" type="button">EXPLORE CASE ↗</button>
           </div>
         </article>
 
-        <article class="project reveal">
-          <div class="media"><img src="assets/project-beauty-01.png" alt="Experiencia de belleza y marca" /></div>
-          <div class="project-info">
-            <span>02 · BEAUTY / RETAIL</span>
-            <h3>Immersive Product Moment</h3>
-            <p>Interacción humana + producto + contenido.</p>
-          </div>
+        <article class="case reveal">
+          <div class="case-image"><img src="assets/project-wella.png" alt="Wella Professionals"><div class="case-number">02</div></div>
+          <div class="case-copy"><span>BEAUTY / PRODUCT / BRAND</span><h3>WELLA</h3><p>Producto transformado en una experiencia editorial, sensorial y altamente fotografiable.</p><button class="text-link js-case" data-case="WELLA" type="button">EXPLORE CASE ↗</button></div>
         </article>
 
-        <article class="project reveal">
-          <div class="media"><img src="assets/project-wella.png" alt="Activación Wella Professionals" /></div>
-          <div class="project-info">
-            <span>03 · BRAND ACTIVATION</span>
-            <h3>Wella Professionals</h3>
-            <p>Producto convertido en objeto de deseo.</p>
-          </div>
+        <article class="case reveal">
+          <div class="case-image"><img src="assets/project-beauty-02.png" alt="Natura activation"><div class="case-number">03</div></div>
+          <div class="case-copy"><span>BEAUTY / RETAIL / EXPERIENCE</span><h3>NATURA</h3><p>Interacción, producto y conversación reunidos en un formato que convierte el punto de contacto en recuerdo.</p><button class="text-link js-case" data-case="NATURA" type="button">EXPLORE CASE ↗</button></div>
         </article>
 
-        <article class="project project-wide reveal">
-          <div class="media"><img src="assets/project-develon.png" alt="Evento DEVELON" /></div>
-          <div class="project-info">
-            <span>04 · INDUSTRIAL / BTL</span>
-            <h3>DEVELON — Heavy Impact</h3>
-            <p>Una experiencia de marca de gran escala con lenguaje industrial, luz y potencia visual.</p>
-          </div>
+        <article class="case case-wide reveal">
+          <div class="case-image"><img src="assets/project-sow-01.png" alt="SOW Natural Salon"><div class="case-number">04</div></div>
+          <div class="case-copy"><span>LIVE / NIGHT / BRAND SPACE</span><h3>SOW</h3><p>Una identidad llevada al espacio físico con luz, señalética, ritmo y presencia.</p><button class="text-link js-case" data-case="SOW" type="button">EXPLORE CASE ↗</button></div>
         </article>
       </div>
     </section>
 
-
-    <section class="live-console section reveal" id="live">
-      <div class="console-top">
-        <span>QUO / LIVE FEED</span><span class="live-dot">● LIVE</span><span id="liveClock">SANTIAGO — --:--</span>
+    <section class="statement">
+      <div class="statement-orbit"></div>
+      <div class="statement-inner reveal">
+        <span class="kicker">QUO POINT OF VIEW</span>
+        <p>Una marca puede estar presente.<br><em>O puede apoderarse del momento.</em></p>
+        <button class="statement-cta js-open-contact" type="button">MAKE IT HAPPEN ↗</button>
       </div>
-      <div class="console-grid">
-        <div class="console-title">
-          <span class="kicker">CURRENTLY CREATING</span>
-          <h2>Ideas<br>in motion.</h2>
-        </div>
-        <div class="console-feed">
-          <div class="feed-row"><span>01</span><strong>BRAND ACTIVATION</strong><em>IN PRODUCTION</em><i></i></div>
-          <div class="feed-row"><span>02</span><strong>CORPORATE EXPERIENCE</strong><em>BUILDING</em><i></i></div>
-          <div class="feed-row"><span>03</span><strong>PRODUCT LAUNCH</strong><em>COMING SOON</em><i class="off"></i></div>
-        </div>
-      </div>
-      <div class="console-bottom"><span>+15 YEARS IN MOTION</span><span>360° PRODUCTION</span><span>IDEA → IMPACT</span></div>
     </section>
 
-    <section class="builder section" id="builder">
+    <section id="builder" class="builder section">
       <div class="builder-head reveal">
         <span class="kicker">QUO / EXPERIENCE BUILDER</span>
-        <h2>Build your<br><em>next experience.</em></h2>
-        <p>No formulario fome. Diseña el ADN inicial de tu proyecto y mándanos el brief en segundos.</p>
+        <h2>DISEÑA EL ADN<br><em>DE TU PRÓXIMO PROYECTO.</em></h2>
+        <p>Configura una primera dirección creativa. QUO convierte la selección en un brief real para conversar.</p>
       </div>
+
       <div class="builder-shell reveal">
         <div class="builder-controls">
           <div class="control-block">
@@ -162,8 +147,8 @@
           </div>
           <div class="control-block">
             <label>02 / ENERGY</label>
-            <input id="energy" type="range" min="1" max="100" value="72">
-            <div class="range-label"><span>INTIMATE</span><span>MASSIVE</span></div>
+            <input id="energy" type="range" min="1" max="100" value="82">
+            <div class="range-label"><span>CONTROLLED</span><span>MAXIMUM IMPACT</span></div>
           </div>
           <div class="control-block">
             <label>03 / STYLE</label>
@@ -178,117 +163,117 @@
             </div>
           </div>
         </div>
+
         <aside class="builder-output">
-          <span>YOUR QUO / 001</span>
-          <div class="output-ring"><div><small>ENERGY</small><strong id="energyValue">72</strong></div></div>
-          <h3 id="buildTitle">IMMERSIVE<br>BRAND LAUNCH</h3>
-          <p id="buildMeta">100–300 PEOPLE / HIGH ENERGY</p>
-          <a id="sendBrief" href="mailto:marcelo@quo-io.com">SEND THIS BRIEF ↗</a>
+          <div class="bo-top"><span>LIVE CONFIG / Q-001</span><i></i></div>
+          <div class="energy-orbit"><div><small>ENERGY</small><strong id="energyValue">82</strong></div></div>
+          <div>
+            <h3 id="buildTitle">IMMERSIVE<br>BRAND LAUNCH</h3>
+            <p id="buildMeta">100–300 PEOPLE / MAXIMUM IMPACT</p>
+          </div>
+          <button id="sendBrief" type="button">ENVIAR ESTE BRIEF ↗</button>
         </aside>
       </div>
     </section>
 
-    <section class="process section" id="process">
+    <section id="services" class="services section">
+      <div class="services-head reveal">
+        <span class="kicker">CAPABILITIES / 360°</span>
+        <h2>DE LA IDEA<br><em>AL IMPACTO.</em></h2>
+      </div>
+      <div class="service-list">
+        <article class="service-row reveal"><span>01</span><h3>Brand Experience</h3><p>Concepto, narrativa, diseño espacial y momentos memorables.</p><b>↗</b></article>
+        <article class="service-row reveal"><span>02</span><h3>BTL & Activaciones</h3><p>Lanzamientos, sampling, retail, pop-ups e intervenciones.</p><b>↗</b></article>
+        <article class="service-row reveal"><span>03</span><h3>Eventos Corporativos</h3><p>Producción integral, técnica, escenografía, hospitality y operación.</p><b>↗</b></article>
+        <article class="service-row reveal"><span>04</span><h3>Innovación & Formatos</h3><p>Tecnología, experiencias híbridas y soluciones a medida.</p><b>↗</b></article>
+      </div>
+    </section>
+
+    <section class="process section">
       <div class="process-head reveal"><span class="kicker">HOW QUO MOVES</span><h2>ZERO <span>→</span> LIVE.</h2></div>
-      <div class="process-track reveal">
-        <div class="process-progress" id="processProgress"></div>
-        <div class="process-step"><b>00</b><strong>BRIEF</strong><p>Entender el desafío.</p></div>
-        <div class="process-step"><b>01</b><strong>IDEA</strong><p>Encontrar el concepto.</p></div>
-        <div class="process-step"><b>02</b><strong>DESIGN</strong><p>Diseñar la experiencia.</p></div>
-        <div class="process-step"><b>03</b><strong>BUILD</strong><p>Hacerla realidad.</p></div>
-        <div class="process-step"><b>04</b><strong>LIVE</strong><p>Encender el momento.</p></div>
-        <div class="process-step"><b>05</b><strong>IMPACT</strong><p>Dejar algo después.</p></div>
+      <div class="process-track reveal" id="processTrack">
+        <div id="processProgress"></div>
+        <div class="step"><b>00</b><strong>BRIEF</strong><p>Entender.</p></div>
+        <div class="step"><b>01</b><strong>IDEA</strong><p>Conceptualizar.</p></div>
+        <div class="step"><b>02</b><strong>DESIGN</strong><p>Diseñar.</p></div>
+        <div class="step"><b>03</b><strong>BUILD</strong><p>Producir.</p></div>
+        <div class="step"><b>04</b><strong>LIVE</strong><p>Activar.</p></div>
+        <div class="step"><b>05</b><strong>IMPACT</strong><p>Dejar huella.</p></div>
       </div>
     </section>
 
-    <section class="archive section" id="archive">
-      <div class="archive-head reveal">
-        <div><span class="kicker">QUO / ARCHIVE</span><h2>15 years of<br><em>making it happen.</em></h2></div>
-        <div class="archive-filters"><button class="active" data-filter="all">ALL</button><button data-filter="beauty">BEAUTY</button><button data-filter="industrial">INDUSTRIAL</button><button data-filter="live">LIVE</button></div>
-      </div>
-      <div class="archive-grid reveal">
-        <article data-cat="live"><img src="assets/project-sow-02.png"><span>LIVE / SOW</span></article>
-        <article data-cat="beauty"><img src="assets/project-beauty-02.png"><span>BEAUTY / EXPERIENCE</span></article>
-        <article data-cat="beauty"><img src="assets/project-wella.png"><span>BEAUTY / WELLA</span></article>
-        <article data-cat="industrial"><img src="assets/project-develon.png"><span>INDUSTRIAL / DEVELON</span></article>
+    <section id="about" class="about section">
+      <div class="about-image reveal"><img src="assets/founder.png" alt="Marcelo Marchini"><span>FOUNDER / PRODUCER</span></div>
+      <div class="about-copy reveal">
+        <span class="kicker">BEHIND QUO</span>
+        <h2>INNOVACIÓN<br><em>BY MARCELO MARCHINI.</em></h2>
+        <p>Más de 15 años produciendo experiencias para marcas que exigen estándar, ejecución y una idea que tenga sentido. QUO combina dirección creativa con capacidad real de producción.</p>
+        <div class="founder-id">
+          <strong>MARCELO MARCHINI</strong>
+          <span>FOUNDER · QUO</span>
+          <a href="mailto:marcelo@quo-io.com">marcelo@quo-io.com ↗</a>
+        </div>
       </div>
     </section>
 
-    <section class="booklab section" id="book">
+    <section class="book section" id="book">
       <div class="book-copy reveal">
         <span class="kicker">BOOK THE LAB</span>
-        <h2>30 minutes.<br><em>One idea.</em></h2>
-        <p>Veamos hasta dónde podemos llevarla. Selecciona una fecha tentativa y abre el brief directo con Marcelo.</p>
+        <h2>30 MINUTOS.<br><em>UNA IDEA.</em></h2>
+        <p>Selecciona una fecha tentativa. El sistema arma el contacto y te permite enviarlo o copiarlo inmediatamente.</p>
       </div>
       <div class="calendar-card reveal">
         <div class="cal-head"><button id="prevMonth">←</button><strong id="monthLabel"></strong><button id="nextMonth">→</button></div>
         <div class="week"><span>L</span><span>M</span><span>M</span><span>J</span><span>V</span><span>S</span><span>D</span></div>
         <div id="calendarDays" class="calendar-days"></div>
-        <div class="cal-action"><span id="selectedDate">SELECCIONA UNA FECHA</span><a id="bookMail" href="mailto:marcelo@quo-io.com">START PROJECT ↗</a></div>
+        <div class="cal-action"><span id="selectedDate">SELECCIONA UNA FECHA</span><button id="bookProject" type="button">START PROJECT ↗</button></div>
       </div>
     </section>
 
-    <section id="services" class="section services">
-      <div class="services-intro reveal">
-        <span class="kicker">WHAT WE DO</span>
-        <h2>No hacemos “eventos”.<br><em>Construimos impacto.</em></h2>
-      </div>
-
-      <div class="service-list">
-        <article class="service-row reveal"><span>01</span><h3>Brand Experience</h3><p>Concepto, narrativa, diseño espacial y momentos memorables que conectan personas con marcas.</p><b>↗</b></article>
-        <article class="service-row reveal"><span>02</span><h3>BTL & Activaciones</h3><p>Experiencias de alto contacto, lanzamientos, sampling, retail, pop-ups e intervenciones.</p><b>↗</b></article>
-        <article class="service-row reveal"><span>03</span><h3>Eventos Corporativos</h3><p>Producción integral, dirección técnica, escenografía, contenidos, hospitality y operación.</p><b>↗</b></article>
-        <article class="service-row reveal"><span>04</span><h3>Innovación & Formatos</h3><p>Nuevos lenguajes, tecnología, experiencias híbridas y soluciones a medida para cada desafío.</p><b>↗</b></article>
-      </div>
-    </section>
-
-    <section class="manifesto">
-      <div class="manifesto-bg"></div>
-      <div class="manifesto-copy reveal">
-        <span class="kicker light">OUR POV</span>
-        <p>La gente olvida un montaje.<br>Recuerda <em>cómo la hiciste sentir.</em></p>
-        <div class="manifesto-stats">
-          <div><strong>15+</strong><span>años creando experiencias</span></div>
-          <div><strong>360°</strong><span>producción de punta a punta</span></div>
-          <div><strong>01</strong><span>partner, desde la idea al impacto</span></div>
-        </div>
-      </div>
-    </section>
-
-    <section id="about" class="section founder">
-      <div class="founder-image reveal">
-        <img src="assets/founder.png" alt="Fundador de QUO" />
-        <div class="founder-badge">FOUNDER / PRODUCER</div>
-      </div>
-      <div class="founder-copy reveal">
-        <span class="kicker">BEHIND QUO</span>
-        <h2>Innovación<br><em>by Marcelo Marchini.</em></h2>
-        <p>QUO nace desde una obsesión simple: hacer que cada experiencia tenga una idea potente detrás y una ejecución impecable delante.</p>
-        <p>Con más de 15 años en BTL, eventos y Brand Experience, trabajamos con equipos y marcas que buscan algo más que “hacer presencia”: buscan generar conversación, recordación y movimiento.</p>
-        <div class="signature">MARCELO MARCHINI <span>— QUO</span></div>
-      </div>
-    </section>
-
-    <section id="contact" class="contact section">
-      <div class="contact-orb"></div>
-      <div class="contact-copy reveal">
-        <span class="kicker">NEXT PROJECT?</span>
-        <h2>Make people<br><span>talk about it.</span></h2>
-        <p>¿Tienes una idea, lanzamiento, activación o evento que necesita una vuelta de tuerca? Hablemos.</p>
-        <a class="mail-link" href="mailto:marcelo@quo-io.com">marcelo@quo-io.com <span>↗</span></a>
-      </div>
-      <div class="contact-side reveal">
-        <div><span>BASE</span><strong>Las Condes<br>Santiago, Chile</strong></div>
-        <div><span>INSTAGRAM</span><a href="https://instagram.com/quo.eventos" target="_blank" rel="noreferrer">@quo.eventos ↗</a></div>
+    <section class="final-cta section">
+      <div class="final-grid"></div>
+      <div class="final-inner reveal">
+        <span>QUO / SANTIAGO / CHILE</span>
+        <h2>MAKE PEOPLE<br><em>TALK ABOUT IT.</em></h2>
+        <button class="js-open-contact" type="button">CONVERSEMOS ↗</button>
       </div>
     </section>
   </main>
 
   <footer>
-    <div class="footer-brand">QUO<span>®</span></div>
-    <p>Innovation · BTL · Events · Brand Experience</p>
-    <p>© <span id="year"></span> QUO. All rights reserved.</p>
+    <strong>QUO®</strong>
+    <span>Innovation · BTL · Events · Brand Experience</span>
+    <a href="https://instagram.com/quo.eventos" target="_blank" rel="noopener">@quo.eventos ↗</a>
+    <span>© <i id="year"></i> QUO</span>
   </footer>
+
+  <dialog id="contactModal" class="modal">
+    <button class="modal-close" data-close type="button">×</button>
+    <span class="kicker">START A PROJECT</span>
+    <h3 id="modalTitle">HAGAMOS ALGO<br>QUE NO PASE INADVERTIDO.</h3>
+    <p id="modalIntro">Completa lo mínimo. Puedes abrir Gmail o copiar el brief al portapapeles.</p>
+    <div class="modal-form">
+      <label>Tu nombre<input id="contactName" placeholder="Nombre / empresa"></label>
+      <label>Tu proyecto<textarea id="contactProject" placeholder="Cuéntanos en una línea qué quieres producir"></textarea></label>
+    </div>
+    <div id="briefPreview" class="brief-preview"></div>
+    <div class="modal-actions">
+      <button id="copyBrief" type="button">COPIAR BRIEF</button>
+      <a id="gmailBrief" href="#" target="_blank" rel="noopener">ABRIR GMAIL ↗</a>
+    </div>
+    <div class="modal-direct">
+      <a href="mailto:marcelo@quo-io.com">marcelo@quo-io.com</a>
+      <a href="https://instagram.com/quo.eventos" target="_blank" rel="noopener">@quo.eventos</a>
+    </div>
+  </dialog>
+
+  <dialog id="caseModal" class="modal case-modal">
+    <button class="modal-close" data-case-close type="button">×</button>
+    <span class="kicker">SELECTED CASE</span>
+    <h3 id="caseTitle">PROJECT</h3>
+    <p id="caseText"></p>
+    <button class="js-open-contact from-case" type="button">QUIERO CREAR ALGO ASÍ ↗</button>
+  </dialog>
 
   <script src="script.js"></script>
 </body>
